@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+.navbar_main {
+    display: flex;
+    padding-inline: 2.5rem;
+    backdrop-filter: blur(20px);
+    padding-block: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    border: .25px solid white;
+    border-radius: 1rem;
+}
+
+.navbar_list li {
+    transition: all .5s cubic-bezier(0.85, 0, 0.15, 1), background-color 1s cubic-bezier(0.85, 0, 0.15, 1), color 1s cubic-bezier(0.85, 0, 0.15, 1);
+    padding-block: 1rem;
+    border: 0.5px solid transparent;
+    border-radius: 2rem;
+}
+
+.navbar_list li:hover {
+    padding-inline: 2rem;
+    border: 0.5px solid white;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    cursor: default;
+}
+
+.navbar_list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.topbar_heading {
+    position: absolute;
+    top: 0;
+    z-index: 50000;
+    width: 100%;
+    transition: all .5s cubic-bezier(0.85, 0, 0.15, 1);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-inline: 12rem;
+    padding-block: 1.5rem;
+}
+
+.user_mod_div {
+    display: flex;
+    gap: .5rem;
+}
+
+.user_mod_login_button {
+    padding-inline: 2rem;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+
+.user_mod_signup_button {
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 0.5px solid white;
+}
+
+
+.hero_heading {
+    text-align: center;
+    color: white;
+    margin-top: 8rem;
+    font-size: 5rem;
+    transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_helper {
+    text-align: center;
+    color: white;
+    transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
+    transition-delay: .25s;
+    font-size: 3rem;
+
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.transition_box {
+    background: linear-gradient(320deg,#59039b,#04d0db,#db04cd, white 50%);
+    width: 40%;
+    height: 6rem;
+    background-size: 200% 250%;
+    animation: gradient-animation 10s ease infinite;
+    position: absolute;
+    top: 22rem;
+    left: 50%;
+    transform: translate(-50%) perspective(4cm) rotateX(-15deg) ;
+    box-shadow: 0px 100px 300px 20px #59039b;
+    border-radius: 10px;
+    z-index: 100;
+    transition: all 1s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+
+.transition_box_helper {
+    width: 43.5%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+    left: 50%;
+    height: 6rem;
+    border-radius: 10px;
+    transform: translate(-50%);
+    transition: all 0.9s cubic-bezier(0.85, 0, 0.15, 1);
+    top: 22rem;
+    background-color: rgba(255,255,255,0.05);
+    box-shadow: 0px 10px 10px 10px rgba(255,255,255,0.05);
+}
+
+
+.transition_box_inner {
+    opacity: 0;
+}
+
+.center_thing {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_button {
+    margin-top: 15rem;
+    font-size: 1.25rem;
+    border: .25px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 2rem;
+    padding: .5rem;
+    padding-inline: 4rem;
+    transition: all .5s ease-out;
+    box-shadow: 0px 10px 100px 50px black;
+}
+
+
+.nav_button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.35);
+    box-shadow: 0px 10px 100px 50px rgba(255,255,255,0.55);
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.transition_box_inner {
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(2);
+    position: absolute;
+}
+
+
+.transition_box_inner_div_blue {
+    height: 30rem;
+    width: 30rem;
+    left: 10rem;
+    top: 10rem;
+    filter: blur(100px);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #59039b;
+}
+
+
+.transition_box_inner_div_pink {
+    height: 30rem;
+    width: 30rem;
+    filter: blur(100px);
+    border-radius: 50%;
+    left: 55rem;
+    top: 7rem;
+    position: absolute;
+    background-color: #D63484;
+}
+
+
+.transition_box_inner_div_purple {
+    height: 20rem;
+    width: 20rem;
+    filter: blur(100px);
+    border-radius: 50%;
+    top: 3rem;
+    left: 35rem;
+    position: absolute;
+    background-color: #7FC7D9;
+}
+
+.transition_box_inner_heading {
+    color: black;
+    font-size: 5rem;
+    mix-blend-mode: color-burn;
+}
+
+
+.transition_box_inner_underlay {
+    width: 20vw;
+    height: 5px;
+    border-radius: 1rem;
+    background: black;
+    bottom: 13rem;
+    position: fixed;
+}
+
+
+.main_landing_page {
+    min-height: 100vh;
+    width: 100vw;
+    background: white;
+    position: absolute;
+    top: 100%;
+    transform: scale(0.5);
+    z-index: 40000;
+    transition: all 2s cubic-bezier(0.85, 0, 0.15, 1);
+    border-radius: 50%;
+}
+
+
+.bottom_navbar_items {
+    position: fixed;
+    display: flex;
+    z-index: 90000;
+    flex-direction: column;
+    top: 50%;
+    gap: 1.5rem;
+    transform: translate(0, -50%);
+    list-style: none;
+    left: 2.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.bottom_navbar_items li {
+    position: relative;
+}
+
+
+.tooltip {
+    position: absolute;
+    right: -8rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    opacity: 0;
+    font-size: 1rem;
+}
+
+.home_tooltip {
+    right: -5rem;
+}
+
+.features_tooltip {
+    right: -6.5rem;
+}
+
+.aboutus_tooltip {
+    right: -7rem;
+}
+
+
+.bottom_navbar_items li:hover {
+    transform: scale(1.5);
+    padding-block: 2.5rem;
+}
+
