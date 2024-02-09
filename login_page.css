@@ -8,6 +8,10 @@
 }
 
 
+body {
+    overflow-x: hidden;
+}
+
 .login_main_section {
     width: 100vw;
     height: 100vh;
@@ -89,6 +93,53 @@ label:before {
 
 }
 
+.back_button {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-inline: 2rem;
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    z-index: 10000;
+}
+
+
+.signup_button {
+    color: white;
+    transition: all 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-inline: 2rem;
+    position: fixed;
+    left: 11rem;
+    border: 2px solid white;
+    top: 2rem;
+    z-index: 10000;
+    background: rgba(0,0,0,0.35)
+}
+
+.back_button:hover {
+    transform: scale(1.2);
+    cursor: default;
+}
+
+.signup_button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.2);
+    cursor: default;
+}
+
 .login_page_submit:hover {
     background: transparent;
     color: white;;
@@ -96,4 +147,64 @@ label:before {
 
 input::placeholder {
     color: white;
+}
+
+
+
+.login_page_signup_div {
+    border-radius: 1.5rem;
+    background: white;
+    position: absolute;
+    z-index: 10000;
+    right: -100rem;
+    transition: all 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+    bottom: 1rem;
+}
+
+
+.login_page_signup_div {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.login_page_signup_div h1 {
+    text-align: center;
+    position: relative;
+}
+
+.login_page_signup_div h1:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    background: black;
+    height: 5px;
+    border-radius: 1rem;
+}
+
+.login_page_signup_div button {
+    padding: .5rem;
+    border-radius: .5rem;
+    background: black;
+    color: white;
+    margin-block: 1rem;
+}
+
+
+.login_page_signup_div label {
+    font-weight: bold;
+    padding-block: 1rem;
+}
+
+.login_page_signup_div input {
+    border: 1px solid black;
+    font-size: 1.2rem;
+    padding-inline: .75rem;
+    padding-block: .25rem;
+    outline: none;
+    border-radius: .5rem;
 }

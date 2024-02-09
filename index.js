@@ -1,4 +1,5 @@
 const see_more_button = document.getElementById("see_more_button");
+const about_us_page = document.querySelector(".about_us_page")
 const transition_box = document.querySelector(".transition_box");
 const hero_heading = document.querySelector(".hero_heading");
 const hero_heading_helper = document.querySelector(".hero_helper");
@@ -11,8 +12,14 @@ const bottom_navbar = document.querySelector(".bottom_navbar_items");
 
 
 topbar_login.onclick = e => {
-    window.open("./login_page.html")
+    window.location.assign("./login_page.html")
 }
+
+main_landing_page.addEventListener("click", e => {
+    about_us_page.style.bottom = "-50rem";
+})
+
+
 
 topbar_signup.onclick = e => {
     window.open("./login_page.html")
@@ -105,6 +112,12 @@ window.onload = () => {
     }
 
 
+    document.querySelector(".aboutus_button").addEventListener("click", e => {
+        if (about_us_page.style.bottom === "-50rem") about_us_page.style.bottom = "0";
+        else about_us_page.style.bottom = "-50rem"
+
+    })
+
     document.querySelector(".dashboard_button").onmouseover = () => {
         document.querySelector(".dashboard_tooltip").style.opacity = "1";
     }
@@ -121,6 +134,9 @@ window.onload = () => {
     }
 
 
+    document.querySelector(".features_button").onclick = () => {
+        window.location.assign("./FeedbackForm.html")
+    }
     document.querySelector(".aboutus_button").onmouseover = () => {
         document.querySelector(".aboutus_tooltip").style.opacity = "1";
     }
