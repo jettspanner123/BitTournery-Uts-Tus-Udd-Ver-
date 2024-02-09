@@ -32,7 +32,7 @@ body {
 }
 
 .navbar_list li {
-    transition: all .5s cubic-bezier(0.85, 0, 0.15, 1), background-color 1s cubic-bezier(0.85, 0, 0.15, 1), color 1s cubic-bezier(0.85, 0, 0.15, 1);
+    transition: all 250ms cubic-bezier(0.85, 0, 0.15, 1), background-color 1s cubic-bezier(0.85, 0, 0.15, 1), color 1s cubic-bezier(0.85, 0, 0.15, 1);
     padding-block: 1rem;
     border: 0.5px solid transparent;
     border-radius: 2rem;
@@ -389,6 +389,7 @@ body {
     bottom: -50rem;
     display: flex;
     justify-content: center;
+    transition: all 100ms ease-out;
     align-items: center;
     gap: 2rem;
     height: 38vh;
