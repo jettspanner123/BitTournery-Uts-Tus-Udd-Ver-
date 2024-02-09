@@ -107,6 +107,11 @@ window.onload = () => {
     document.querySelector(".home_button").onmouseover = () => {
         document.querySelector(".home_tooltip").style.opacity = "1";
     }
+
+
+    document.querySelector(".home_button").onclick = () => {
+        window.location.reload();
+    }
     document.querySelector(".home_button").onmouseout = () => {
         document.querySelector(".home_tooltip").style.opacity = '0';
     }
