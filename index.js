@@ -97,6 +97,11 @@ const MainPageAnimation = () => {
     }, 1000)
 }
 
+
+const HandleEventsPage = () => {
+    window.location.assign("./Events.html");
+}
+
 window.onload = () => {
     setTimeout(LandingPageAnimation, 2000);
     setTimeout(LandingPageHelperAnimation, 1500);

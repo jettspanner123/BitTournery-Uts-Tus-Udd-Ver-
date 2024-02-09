@@ -70,13 +70,19 @@
 
 <div class="main_landing_page">
     <h1 class="main_landing_page_grid_heading">The Simplest Way To Host Your Events.</h1>
-    <div class="main_landing_page_grid_item main_landing_page_grid_item_one">
+    <div
+            onclick="HandleEventsPage()"
+            class="main_landing_page_grid_item main_landing_page_grid_item_one">
         Social Events
     </div>
-    <div class="main_landing_page_grid_item main_landing_page_grid_item_two">
+    <div
+            onclick="HandleEventsPage()"
+            class="main_landing_page_grid_item main_landing_page_grid_item_two">
         Ethnic Events
     </div>
-    <div class="main_landing_page_grid_item main_landing_page_grid_item_three">
+    <div
+            onclick="HandleEventsPage()"
+            class="main_landing_page_grid_item main_landing_page_grid_item_three">
         Casual Affairs
     </div>
     <div class="main_landing_page_grid_item  main_landing_page_grid_item_four">
@@ -96,7 +102,9 @@
         <i class="fa-solid fa-house"></i>
         <p class="home_tooltip tooltip">Home</p>
     </li>
-    <li class="dashboard_button">
+    <li
+            onclick="window.location.assign('./Events.html')"
+            class="dashboard_button">
         <i class="fa-solid fa-table"></i>
         <p class="dashboard_tooltip tooltip">Dashboard</p>
     </li>
