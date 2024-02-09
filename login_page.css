@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+
+.login_main_section {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.login_page_phone {
+    width: 30%;
+    height: 95%;
+    transition: transform .6s ease-out;
+}
+
+.login_page_phone_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s ease-out;
+    color: white;
+}
+
+.login_main_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+label:before {
+    position: absolute;
+    content: "";
+    bottom: -.5rem;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 1rem;
+}
+
+.login_page_input {
+    border: 0.5px solid white;
+    border-radius: .5rem;
+    padding: 0.75rem;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.login_page_img {
+    height: 10rem;
+    width: 10rem;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 8rem;
+    transition: transform .6s ease-out;
+    transform: translate(-50%, 0);
+}
+
+.login_page_submit {
+    padding: .5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 0.5px solid white;
+
+}
+
+.login_page_submit:hover {
+    background: transparent;
+    color: white;;
+}
+
+input::placeholder {
+    color: white;
+}

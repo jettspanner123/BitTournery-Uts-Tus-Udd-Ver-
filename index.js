@@ -7,9 +7,16 @@ const topbar_login = document.querySelector(".user_mod_login_button");
 const topbar_signup = document.querySelector(".user_mod_signup_button");
 const transition_box_inner = document.querySelector(".transition_box_inner");
 const main_landing_page = document.querySelector(".main_landing_page");
+const bottom_navbar = document.querySelector(".bottom_navbar_items");
 
 
+topbar_login.onclick = e => {
+    window.open("./login_page.html")
+}
 
+topbar_signup.onclick = e => {
+    window.open("./login_page.html")
+}
 
 const LandingPageAnimation = () => {
     transition_box.style.width = "100%";
@@ -76,13 +83,18 @@ const MainPageAnimation = () => {
         topbar_signup.style.color = "black";
         topbar_signup.style.border = `0.5px solid black`;
     }, 1000)
+
+    setTimeout(() => {
+        bottom_navbar.style.left = "2.5rem";
+        bottom_navbar.style.opacity = '1';
+    }, 1000)
 }
 
-window.onload = ()=> {
+window.onload = () => {
     setTimeout(LandingPageAnimation, 2000);
     setTimeout(LandingPageHelperAnimation, 1500);
     setTimeout(MainPhaseAnimation, 2200);
-    setTimeout(MainPageAnimation, 4900);
+    setTimeout(MainPageAnimation, 4500);
 
 
     document.querySelector(".home_button").onmouseover = () => {

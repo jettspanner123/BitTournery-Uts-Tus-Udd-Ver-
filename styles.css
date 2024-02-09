@@ -192,6 +192,7 @@ body {
     }
     100% {
         background-position: 0% 50%;
+
     }
 }
 
@@ -245,7 +246,8 @@ body {
 
 .transition_box_inner_heading {
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
     mix-blend-mode: color-burn;
 }
 
@@ -270,19 +272,43 @@ body {
     z-index: 40000;
     transition: all 2s cubic-bezier(0.85, 0, 0.15, 1);
     border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding-inline: 15rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 0;
+    padding-top: 7rem;
+}
+
+.main_landing_page_grid_heading {
+    color: black;
+
+}
+
+
+.main_landing_page_grid_item {
+    width: 100%;
+    background: hotpink;
+    border-radius: 1.5rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .bottom_navbar_items {
     position: fixed;
     display: flex;
+    opacity: 0;
+    left: -5rem;
     z-index: 90000;
     flex-direction: column;
     top: 50%;
     gap: 1.5rem;
     transform: translate(0, -50%);
     list-style: none;
-    left: 2.5rem;
     font-size: 1.5rem;
     color: black;
 }
@@ -319,4 +345,103 @@ body {
     transform: scale(1.5);
     padding-block: 2.5rem;
 }
+
+
+
+
+.main_landing_page_grid_item {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    filter: brightness(80%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_landing_page_grid_item_one {
+    background: linear-gradient(300deg,#005fa3,#7002a9,#9d0676);
+    background-size: 180% 180%;
+    animation: gradient-animation_card_one 18s ease infinite;
+}
+
+@keyframes gradient-animation_card_one {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+.main_landing_page_grid_item_two {
+    background: linear-gradient(200deg,#00FDFF,#130169);
+    background-size: 120% 120%;
+    animation: gradient-animation_card_two 12s ease infinite;
+}
+
+@keyframes gradient-animation_card_two {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+.main_landing_page_grid_item_three{
+    background: linear-gradient(140deg,#b000ff,#ff0001);
+    background-size: 120% 120%;
+    animation: gradient-animation_card_three 12s ease infinite;
+}
+
+@keyframes gradient-animation_card_three {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
